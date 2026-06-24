@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Specific Chiropractic Centers — The Movement</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300..900;1,400..700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green: oklch(0.70 0.155 132);
+    --green-d: oklch(0.55 0.13 134);
+    --green-dd: oklch(0.40 0.10 137);
+    --ink: oklch(0.28 0.018 235);
+    --cream: oklch(0.975 0.009 120);
+    --cream-2: oklch(0.95 0.012 122);
+    --slate: oklch(0.50 0.018 240);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:"Mulish",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .exp{font-family:"Mulish",sans-serif;font-weight:900;text-transform:uppercase}
+  .arch{font-family:"Mulish",sans-serif}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 36px}
+  .mark rect{fill:currentColor}
+  .logo{display:block;width:auto}
+  .logo-nav{height:30px}
+  .logo-foot{height:34px}
+
+  nav{position:sticky;top:0;z-index:60;background:var(--ink);color:var(--cream)}
+  .nav-in{max-width:1240px;margin:0 auto;padding:15px 36px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .nav-links{display:flex;gap:28px;align-items:center;font-family:"Mulish";font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+  .nav-links a{color:color-mix(in oklch,var(--cream) 78%,transparent);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:var(--green)}
+  .btn{font-family:"Mulish";font-weight:800;font-size:.82rem;text-transform:uppercase;letter-spacing:.04em;padding:12px 24px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-block;border:2px solid transparent;transition:transform .25s cubic-bezier(.2,.9,.3,1),background .2s,color .2s}
+  .btn-green{background:var(--green);color:var(--ink)}
+  .btn-green:hover{transform:translateY(-3px)}
+  .btn-ink{background:var(--ink);color:var(--cream)}
+  .btn-ink:hover{transform:translateY(-3px)}
+  .btn-out-cream{border-color:color-mix(in oklch,var(--cream) 40%,transparent);color:var(--cream)}
+  .btn-out-cream:hover{background:var(--cream);color:var(--ink)}
+  .btn-out-ink{border-color:var(--ink);color:var(--ink)}
+  .btn-out-ink:hover{background:var(--ink);color:var(--cream)}
+
+  /* hero — drenched */
+  header{background:var(--green);color:var(--ink);position:relative;overflow:hidden;padding:70px 0 0}
+  header .ghost-mark{position:absolute;right:-2%;top:6%;width:42vw;max-width:560px;opacity:.16;transform:rotate(4deg);pointer-events:none;user-select:none}
+  .hero-tag{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--green);font-family:"Mulish";font-weight:700;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;border-radius:999px;position:relative}
+  h1{position:relative;font-family:"Mulish";font-weight:900;text-transform:uppercase;font-size:clamp(3rem,11vw,9.2rem);line-height:.84;letter-spacing:-.02em;margin:26px 0 0}
+  h1 .stroke{-webkit-text-stroke:2px var(--ink);color:transparent}
+  .hero-sub{position:relative;display:flex;gap:40px;align-items:flex-end;margin-top:34px;flex-wrap:wrap}
+  .hero-sub p{font-size:1.18rem;font-weight:500;max-width:40ch}
+  .hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+  .hero-foot{position:relative;margin-top:56px;border-top:2px solid var(--ink);display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+  .hf{padding:20px 0}
+  .hf b{font-family:"Mulish";font-weight:900;font-size:2.2rem;display:block;line-height:1}
+  .hf span{font-family:"Mulish";font-weight:600;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:var(--green-dd)}
+
+  /* ticker */
+  .ticker{background:var(--ink);color:var(--green);padding:14px 0;overflow:hidden;white-space:nowrap;border-top:3px solid var(--green)}
+  .ticker .run{display:inline-block;animation:slide 24s linear infinite;font-family:"Mulish";font-weight:900;text-transform:uppercase;font-size:1.1rem;letter-spacing:.02em}
+  .ticker .run span{margin:0 22px}
+  .ticker .run .o{color:var(--cream)}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  section{padding:108px 0}
+  /* clinic finder */
+  .finder-sec{padding:30px 0}
+  .finder{background:var(--ink);color:var(--cream);border-radius:28px;padding:50px 52px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+  .finder h2{color:var(--cream);margin-top:12px}
+  .finder p{opacity:.82;margin-top:14px;max-width:42ch;font-size:1.02rem}
+  .finder-form{display:flex;gap:11px;flex-wrap:wrap}
+  .finder-form input{font-family:"Mulish";font-weight:700;font-size:1rem;padding:16px 24px;border-radius:999px;border:2px solid color-mix(in oklch,var(--cream) 28%,transparent);background:transparent;color:var(--cream);min-width:240px;outline:none;transition:border-color .2s}
+  .finder-form input::placeholder{color:color-mix(in oklch,var(--cream) 55%,transparent);font-weight:600}
+  .finder-form input:focus{border-color:var(--green)}
+  .kick{font-family:"Mulish";font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;color:var(--green-d)}
+  h2{font-family:"Mulish";font-weight:900;text-transform:uppercase;font-size:clamp(2.1rem,5.6vw,4.4rem);line-height:.92;letter-spacing:-.02em;margin-top:16px}
+
+  /* promise blocks */
+  .promise{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:54px}
+  .pcard{background:var(--ink);color:var(--cream);border-radius:22px;padding:38px 32px 34px;position:relative;overflow:hidden;transition:transform .3s cubic-bezier(.2,.9,.3,1)}
+  .pcard:hover{transform:translateY(-6px)}
+  .pcard:nth-child(2){background:var(--green);color:var(--ink)}
+  .pcard .pn{font-family:"Mulish";font-weight:900;font-size:3.4rem;line-height:.8;opacity:.25}
+  .pcard h3{font-family:"Mulish";font-weight:900;text-transform:uppercase;font-size:1.7rem;margin:22px 0 12px;letter-spacing:-.01em}
+  .pcard p{font-size:.98rem;opacity:.92}
+
+  /* technique split */
+  .split{background:var(--ink);color:var(--cream);border-radius:30px;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr}
+  .split-l{padding:64px 56px}
+  .split-l h2{color:var(--cream)}
+  .split-l h2 em{color:var(--green);font-style:normal}
+  .split-l p{margin-top:22px;font-size:1.08rem;opacity:.85;max-width:46ch}
+  .split-l .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+  .chip{font-family:"Mulish";font-weight:700;font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;border:1.5px solid color-mix(in oklch,var(--cream) 30%,transparent);border-radius:999px;padding:7px 15px;color:color-mix(in oklch,var(--cream) 86%,transparent)}
+  .split-r{background:var(--green);color:var(--ink);padding:64px 50px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+  .split-r .huge{font-family:"Mulish";font-weight:900;font-size:8rem;line-height:.8;letter-spacing:-.04em}
+  .split-r .huge small{font-size:1.6rem;display:block;font-family:"Mulish";font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-top:14px}
+  .split-r ul{list-style:none;margin-top:34px;border-top:2px solid var(--ink)}
+  .split-r li{display:flex;justify-content:space-between;padding:13px 0;font-family:"Mulish";font-weight:700;font-size:.92rem;text-transform:uppercase;letter-spacing:.03em;border-bottom:1px solid color-mix(in oklch,var(--ink) 25%,transparent)}
+
+  /* doctors */
+  .docs{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:54px}
+  .doc{border-radius:24px;overflow:hidden;background:var(--cream-2);border:2px solid var(--ink);transition:transform .3s cubic-bezier(.2,.9,.3,1)}
+  .doc:hover{transform:translateY(-5px)}
+  .doc-hd{background:var(--ink);color:var(--cream);padding:30px 32px;display:flex;align-items:center;gap:20px}
+  .doc-hd .av{width:66px;height:66px;border-radius:16px;background:var(--green);color:var(--ink);display:grid;place-items:center;font-family:"Mulish";font-weight:900;font-size:1.5rem;flex-shrink:0}
+  .doc-hd h3{font-family:"Mulish";font-weight:900;text-transform:uppercase;font-size:1.35rem;line-height:1}
+  .doc-hd .r{font-family:"Mulish";font-weight:700;font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:var(--green);margin-top:7px}
+  .doc-bd{padding:30px 32px}
+  .doc-bd p{font-size:.98rem;color:color-mix(in oklch,var(--ink) 84%,transparent)}
+  .doc-bd .stat{display:flex;gap:26px;margin-top:22px;padding-top:20px;border-top:2px solid var(--ink)}
+  .doc-bd .stat b{font-family:"Mulish";font-weight:900;font-size:1.5rem;display:block;line-height:1}
+  .doc-bd .stat span{font-family:"Mulish";font-weight:600;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--green-d)}
+
+  /* cta drenched */
+  .cta{background:var(--green);color:var(--ink);text-align:center;position:relative;overflow:hidden}
+  .cta .ghost2{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-6deg);width:40vw;max-width:480px;opacity:.14;pointer-events:none}
+  .cta h2{position:relative;font-size:clamp(2.6rem,8vw,6.5rem)}
+  .cta p{position:relative;font-size:1.18rem;font-weight:500;max-width:46ch;margin:22px auto 34px}
+  .cta-actions{position:relative;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+  footer{background:var(--ink);color:color-mix(in oklch,var(--cream) 70%,transparent);padding:56px 0 40px}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px}
+  footer a{color:color-mix(in oklch,var(--cream) 70%,transparent);text-decoration:none;display:block;margin:8px 0;font-size:.9rem}
+  footer a:hover{color:var(--green)}
+  .fcol h4{color:var(--green);font-family:"Mulish";font-weight:800;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;margin-bottom:12px}
+
+  @media(max-width:900px){
+    .split{grid-template-columns:1fr}
+    .promise,.docs,.hero-foot{grid-template-columns:1fr 1fr}
+    .nav-links{display:none}
+  }
+  @media(max-width:560px){.promise,.docs{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#"><img class="logo logo-nav" src="assets/logo-horiz-white.png" alt="The Specific Chiropractic Centers"></a>
+    <div class="nav-links">
+      <a href="#promise">The Promise</a>
+      <a href="#technique">The Technique</a>
+      <a href="#doctors">The Doctors</a>
+      <a href="#find">Find a Clinic</a>
+      <a href="#book" class="btn btn-green">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <img class="ghost-mark" src="assets/mark-ink.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <span class="hero-tag">● The Specific Chiropractic Centers — Since 2006</span>
+    <h1>Make the<br>miracle<br><span class="stroke">normal.</span></h1>
+    <div class="hero-sub">
+      <p>One precise correction to the top of your spine can give people their lives back. We are the network of doctors who refuse to call that rare.</p>
+      <div class="hero-actions">
+        <a href="#book" class="btn btn-ink">Book your first visit</a>
+        <a href="#find" class="btn btn-out-ink">Find a clinic</a>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <div class="hf"><b>16</b><span>Centers nationwide</span></div>
+      <div class="hf"><b>200+</b><span>Post-grad hours</span></div>
+      <div class="hf"><b>1</b><span>Vertebra in focus</span></div>
+      <div class="hf"><b>20yr</b><span>Of the movement</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="run">
+    <span>Get Hope<span class="o"> ✦ </span>Get Well<span class="o"> ✦ </span>Live Life<span class="o"> ✦ </span></span>
+    <span>Get Hope<span class="o"> ✦ </span>Get Well<span class="o"> ✦ </span>Live Life<span class="o"> ✦ </span></span>
+    <span>Get Hope<span class="o"> ✦ </span>Get Well<span class="o"> ✦ </span>Live Life<span class="o"> ✦ </span></span>
+    <span>Get Hope<span class="o"> ✦ </span>Get Well<span class="o"> ✦ </span>Live Life<span class="o"> ✦ </span></span>
+  </div>
+</div>
+
+<section id="promise">
+  <div class="wrap">
+    <span class="kick">What you walk in for</span>
+    <h2>Hope. Health.<br>Your life back.</h2>
+    <div class="promise">
+      <div class="pcard"><div class="pn">01</div><h3>Get Hope</h3><p>You were told to manage it forever. We start by finding what is actually wrong, on film, with a plan you can see.</p></div>
+      <div class="pcard"><div class="pn">02</div><h3>Get Well</h3><p>A specific correction to the atlas lets your body do what it already knows how to do. Gentle. Measured. Confirmed.</p></div>
+      <div class="pcard"><div class="pn">03</div><h3>Live Life</h3><p>Relief is step one. The point is the life on the other side of it, the one you stopped planning for.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="finder-sec" id="find">
+  <div class="wrap">
+    <div class="finder">
+      <div>
+        <span class="kick" style="color:var(--green)">Find a clinic</span>
+        <h2>16 centers.<br>Find yours.</h2>
+        <p>From Hawaii to Massachusetts. Drop in your city or ZIP and we'll send you to the nearest clinic and its booking page.</p>
+      </div>
+      <form class="finder-form" onsubmit="return false">
+        <input type="text" placeholder="City or ZIP code" aria-label="City or ZIP code">
+        <button class="btn btn-green" type="submit">Find a clinic</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0" id="technique">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-l">
+        <span class="kick" style="color:var(--green)">The Art of the Specific</span>
+        <h2>Precision is<br>the <em>whole</em> point.</h2>
+        <p>Founded by Dr. Shawn Dill and the late Dr. Andy Roberts, our knee-chest, solid-headpiece upper cervical technique corrects the atlas using biomechanical x-ray and pattern analysis. No twisting. No cracking. Just the exact move your spine needs.</p>
+        <div class="chips"><span class="chip">Knee Chest</span><span class="chip">Solid Headpiece</span><span class="chip">Biomechanical X-Ray</span><span class="chip">Pattern Analysis</span></div>
+      </div>
+      <div class="split-r">
+        <div class="huge">C1<small>The Atlas</small></div>
+        <ul>
+          <li><span>Force</span><span>Specific</span></li>
+          <li><span>Method</span><span>Knee chest</span></li>
+          <li><span>Proof</span><span>Re-imaged</span></li>
+          <li><span>Taught</span><span>Worldwide</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="doctors" style="padding-top:20px">
+  <div class="wrap">
+    <span class="kick">Who leads it</span>
+    <h2>Two doctors.<br>One mission.</h2>
+    <div class="docs">
+      <div class="doc">
+        <div class="doc-hd"><div class="av">SD</div><div><h3>Dr. Shawn Dill</h3><div class="r">Founder · CEO</div></div></div>
+        <div class="doc-bd">
+          <p>Built one of the world's largest upper cervical practices in Costa Rica, then wrote the national law to regulate the profession. Founder of The Art of the Specific and mentor to entrepreneurs through the Black Diamond Club.</p>
+          <div class="stat"><div><b>1995</b><span>Logan D.C.</span></div><div><b>8 yrs</b><span>Costa Rica</span></div><div><b>Founder</b><span>The Specific</span></div></div>
+        </div>
+      </div>
+      <div class="doc">
+        <div class="doc-hd"><div class="av">GD</div><div><h3>Dr. Grant Dennis</h3><div class="r">COO · Lead Instructor</div></div></div>
+        <div class="doc-bd">
+          <p>First-generation chiropractor, former scholarship athlete, builder of two Arkansas clinics famous for the cases everyone else gave up on. He teaches The Art of the Specific worldwide and guards the standard.</p>
+          <div class="stat"><div><b>Cum Laude</b><span>Parker D.C.</span></div><div><b>2</b><span>Clinics built</span></div><div><b>Global</b><span>Instructor</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="book">
+  <img class="ghost2" src="assets/mark-ink.png" alt="" aria-hidden="true">
+  <div class="wrap">
+    <h2>Get in.<br>Get specific.</h2>
+    <p>Find the center near you, or become one of the doctors carrying this work into the next twenty years.</p>
+    <div class="cta-actions">
+      <a href="#" class="btn btn-ink">Book your first visit</a>
+      <a href="#find" class="btn btn-out-ink">Find a clinic</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div style="max-width:280px">
+        <img class="logo logo-foot" src="assets/logo-horiz-white.png" alt="The Specific Chiropractic Centers" style="margin-bottom:16px">
+        <p style="font-size:.9rem">A movement of upper cervical doctors making the miracle normal, one atlas at a time.</p>
+      </div>
+      <div class="fcol"><h4>Care</h4><a href="#">Find a Center</a><a href="#">Conditions</a><a href="#">Stories</a></div>
+      <div class="fcol"><h4>Doctors</h4><a href="#">The Technique</a><a href="#">Training</a><a href="#">Black Diamond Club</a></div>
+      <div class="fcol"><h4>Company</h4><a href="#">Our Story</a><a href="#">Leadership</a><a href="#">Contact</a></div>
+    </div>
+    <p style="margin-top:34px;font-size:.82rem;opacity:.6">© 2006–2026 The Specific Chiropractic Centers — Get Hope. Get Well. Live Life.</p>
+  </div>
+</footer>
+
+</body>
+</html>

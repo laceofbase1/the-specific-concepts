@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Specific — Four Website Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: oklch(0.965 0.01 95);
+    --ink: oklch(0.26 0.015 145);
+    --soft: oklch(0.48 0.012 145);
+    --green: oklch(0.58 0.11 134);
+    --blue: oklch(0.60 0.13 244);
+    --line: oklch(0.86 0.012 100);
+    --card: oklch(0.99 0.005 95);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:"Inter",sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 36px}
+  .mark rect{fill:var(--green)}
+  header{padding:64px 0 40px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:12px;font-family:"Newsreader";font-size:1.3rem;font-weight:500;margin-bottom:30px}
+  h1{font-family:"Newsreader";font-weight:340;font-size:clamp(2.4rem,5vw,3.8rem);letter-spacing:-.02em;line-height:1.04;max-width:18ch}
+  h1 em{font-style:italic;color:var(--green)}
+  .sub{color:var(--soft);max-width:62ch;margin-top:18px;font-size:1.05rem}
+  .meta{display:flex;gap:26px;flex-wrap:wrap;margin-top:26px;font-size:.85rem;color:var(--soft)}
+  .meta b{color:var(--ink)}
+  .swatches{display:flex;gap:10px;align-items:center;margin-top:22px}
+  .sw{width:30px;height:30px;border-radius:7px;border:1px solid var(--line)}
+  .sw-label{font-size:.78rem;color:var(--soft);margin-left:6px}
+
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;padding:46px 0 70px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;transition:transform .3s cubic-bezier(.2,.9,.3,1),box-shadow .3s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-5px);box-shadow:0 30px 60px -40px rgba(40,50,30,.5)}
+  .frame{height:300px;border-bottom:1px solid var(--line);overflow:hidden;position:relative;background:#fff}
+  .frame iframe{width:1280px;height:1067px;border:0;transform:scale(.408);transform-origin:top left;pointer-events:none}
+  .cap{padding:24px 26px 28px}
+  .cap .n{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600}
+  .cap h2{font-family:"Newsreader";font-weight:480;font-size:1.5rem;margin:8px 0 8px;letter-spacing:-.01em}
+  .cap p{color:var(--soft);font-size:.94rem}
+  .cap .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+  .tag{font-size:.72rem;color:var(--soft);border:1px solid var(--line);border-radius:999px;padding:4px 11px}
+  .open{margin-top:18px;font-size:.86rem;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:6px}
+  .card:hover .open{color:var(--green)}
+  footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--soft);font-size:.86rem}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <svg class="mark" width="30" height="30" viewBox="0 0 120 120" aria-hidden="true"><g transform="rotate(-9 60 60)"><rect x="40" y="26" width="56" height="24" rx="1.5"/><rect x="26" y="58" width="56" height="24" rx="1.5"/></g></svg>
+      The Specific
+    </div>
+    <h1>Four directions for <em>thespecific.com</em></h1>
+    <p class="sub">Each is a complete, working homepage built around Dr. Shawn Dill and Dr. Grant Dennis, the upper cervical specific technique, and the dual mission of caring for patients and training doctors. All four use the real logo mark and brand colors. Click any concept to open it full screen.</p>
+    <div class="meta">
+      <span><b>Audience:</b> Patients + prospective doctors</span>
+      <span><b>Led by:</b> Dr. Shawn Dill &amp; Dr. Grant Dennis</span>
+      <span><b>Anchor:</b> "From miracle to normal"</span>
+      <span><b>Now using:</b> the real logo on every layout</span>
+    </div>
+    <div class="swatches">
+      <div class="sw" style="background:#8bb953"></div><span class="sw-label">Green #8bb953</span>
+      <div class="sw" style="background:#5e6a72;margin-left:14px"></div><span class="sw-label">Slate #5e6a72</span>
+      <div class="sw" style="background:#ffffff;margin-left:14px"></div><span class="sw-label">White</span>
+      <span class="sw-label" style="margin-left:18px;font-style:italic">Aligned to the official Brand Bible (Mulish type, real logo, no blue)</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="grid">
+
+    <a class="card" href="concept-1-field-notes.html" target="_blank">
+      <div class="frame"><iframe src="concept-1-field-notes.html" scrolling="no" loading="lazy"></iframe></div>
+      <div class="cap">
+        <span class="n">Concept 01</span>
+        <h2>From Miracle to Normal</h2>
+        <p>An editorial, documentary register. Warm paper, Fraunces serif, magazine-style storytelling. Feels like a respected feature on the movement, with green as the one living accent.</p>
+        <div class="tags"><span class="tag">Editorial</span><span class="tag">Warm / serif</span><span class="tag">Story-led</span></div>
+        <span class="open">Open concept →</span>
+      </div>
+    </a>
+
+    <a class="card" href="concept-2-the-standard.html" target="_blank">
+      <div class="frame"><iframe src="concept-2-the-standard.html" scrolling="no" loading="lazy"></iframe></div>
+      <div class="cap">
+        <span class="n">Concept 02</span>
+        <h2>The Specific Standard</h2>
+        <p>A precision-instrument register. Dark, blueprint grid, an annotated C1 atlas diagram, monospaced data. Leans hard into "specific = exact." Green and blue read as diagram colors.</p>
+        <div class="tags"><span class="tag">Dark / technical</span><span class="tag">Blueprint</span><span class="tag">Precision</span></div>
+        <span class="open">Open concept →</span>
+      </div>
+    </a>
+
+    <a class="card" href="concept-3-momentum.html" target="_blank">
+      <div class="frame"><iframe src="concept-3-momentum.html" scrolling="no" loading="lazy"></iframe></div>
+      <div class="cap">
+        <span class="n">Concept 03</span>
+        <h2>Momentum</h2>
+        <p>A bold, athletic movement register. The brand green drenches the hero, heavy Mulish type, the "Get Hope / Get Well / Live Life" ticker. Built to recruit patients and doctors with energy.</p>
+        <div class="tags"><span class="tag">Drenched green</span><span class="tag">Big type</span><span class="tag">Movement</span></div>
+        <span class="open">Open concept →</span>
+      </div>
+    </a>
+
+    <a class="card" href="concept-4-quiet-authority.html" target="_blank">
+      <div class="frame"><iframe src="concept-4-quiet-authority.html" scrolling="no" loading="lazy"></iframe></div>
+      <div class="cap">
+        <span class="n">Concept 04</span>
+        <h2>Quiet Authority</h2>
+        <p>The brand-faithful flagship. Green + slate gray + white, Mulish type with the light/heavy "Putting the health and care" treatment, the big "S" watermark, and the real brand voice (Get Hope / Get Well / Live Life, Outreach).</p>
+        <div class="tags"><span class="tag">On-brand</span><span class="tag">Premium</span><span class="tag">Calm</span></div>
+        <span class="open">Open concept →</span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">Four concepts · The Specific Chiropractic Centers · Research-built from the live brand. Open each file directly for the full-resolution page.</div>
+</footer>
+</body>
+</html>

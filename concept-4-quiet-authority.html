@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>The Specific Chiropractic Centers — Putting the Health and Care Back in Healthcare</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300..900;1,400..700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: oklch(0.986 0.005 110);
+    --bg-2: oklch(0.962 0.009 125);
+    --paper: oklch(0.995 0.003 110);
+    --slate: oklch(0.50 0.018 240);        /* #5e6a72 wordmark gray */
+    --slate-ink: oklch(0.38 0.018 240);    /* darker heading slate */
+    --slate-soft: oklch(0.60 0.014 240);
+    --green: oklch(0.745 0.13 131);        /* #8bb953 brand green */
+    --green-bright: oklch(0.74 0.165 132); /* punchy header green */
+    --green-deep: oklch(0.55 0.115 134);   /* readable green on light */
+    --line: oklch(0.905 0.008 120);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--slate-ink);font-family:"Mulish",sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased;font-weight:400}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 40px}
+  .wrap-tight{max-width:900px;margin:0 auto;padding:0 40px}
+  .label{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:800;color:var(--green-deep)}
+  .logo{display:block;width:auto}
+  .logo-nav{height:36px}
+  .logo-foot{height:40px}
+  h1,h2,h3,h4{font-weight:800;letter-spacing:-.02em;line-height:1.05;color:var(--slate-ink)}
+
+  nav{position:sticky;top:0;z-index:50;background:color-mix(in oklch,var(--bg) 86%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-in{max-width:1100px;margin:0 auto;padding:17px 40px;display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;text-decoration:none}
+  .nav-links{display:flex;gap:34px;align-items:center;font-size:.88rem;font-weight:600}
+  .nav-links a{color:var(--slate-soft);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:var(--slate-ink)}
+  .btn{font-weight:700;font-size:.86rem;padding:12px 24px;border-radius:999px;cursor:pointer;text-decoration:none;display:inline-block;border:2px solid transparent;transition:transform .3s cubic-bezier(.2,.9,.3,1),background .25s,color .25s,border-color .25s}
+  .btn-green{background:var(--green);color:#fff}
+  .btn-green:hover{transform:translateY(-2px);background:var(--green-deep)}
+  .btn-outline{border-color:var(--slate);color:var(--slate-ink)}
+  .btn-outline:hover{background:var(--slate-ink);color:var(--bg);border-color:var(--slate-ink)}
+
+  /* hero — brand promise, light + heavy contrast */
+  header{padding:108px 0 90px;position:relative;overflow:hidden}
+  .hero-S{position:absolute;right:-7%;top:50%;transform:translateY(-46%);font-weight:900;font-size:62vh;line-height:.7;color:var(--green);opacity:.07;pointer-events:none;user-select:none}
+  .hero-in{position:relative;max-width:none}
+  h1.promise{font-weight:300;font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.05;letter-spacing:-.03em;color:var(--slate);text-wrap:balance}
+  h1.promise b{font-weight:900;color:var(--slate-ink)}
+  h1.promise .g{font-weight:900;color:var(--green-deep)}
+  .hero-lede{font-size:1.2rem;color:var(--slate-soft);max-width:50ch;margin:28px 0 0}
+  .hero-actions{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+  .hero-rule{margin-top:64px;display:grid;grid-template-columns:repeat(4,auto);gap:46px;border-top:1px solid var(--line);padding-top:26px;width:fit-content}
+  .hr-item b{font-size:1.9rem;font-weight:800;display:block;line-height:1;letter-spacing:-.02em;color:var(--slate-ink)}
+  .hr-item span{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--slate-soft);font-weight:700}
+
+  section{padding:92px 0}
+  .center{text-align:center;max-width:52ch;margin:0 auto 56px}
+  .center h2{font-size:clamp(2rem,4.6vw,3.1rem);margin-top:14px}
+  .center p{color:var(--slate-soft);margin-top:14px}
+
+  /* pillars: Get Hope / Get Well / Live Life */
+  .triad{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+  .t{padding:44px 34px 38px;position:relative}
+  .t:not(:last-child){border-right:1px solid var(--line)}
+  .t .mk{width:34px;margin-bottom:20px;opacity:.95}
+  .t .pill{font-weight:900;font-size:1.6rem;letter-spacing:-.01em;margin-bottom:12px}
+  .t .pill .g{color:var(--green-deep)}
+  .t p{color:var(--slate-soft);font-size:.98rem}
+
+  /* who we are — brand/cause/people */
+  .vals{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .val{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:34px 30px;transition:transform .3s cubic-bezier(.2,.9,.3,1),box-shadow .3s}
+  .val:hover{transform:translateY(-4px);box-shadow:0 24px 50px -38px rgba(60,80,50,.5)}
+  .val h4{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:14px}
+  .val p{color:var(--slate-soft);font-size:1rem}
+  .val p b{color:var(--slate-ink);font-weight:800}
+
+  /* technique panel */
+  .panel{background:var(--bg-2);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:grid;grid-template-columns:1.12fr .88fr}
+  .panel-l{padding:60px 52px}
+  .panel-l h2{font-size:clamp(1.9rem,4vw,2.8rem);margin:14px 0 22px}
+  .panel-l h2 .g{color:var(--green-deep)}
+  .panel-l p{color:var(--slate-soft);max-width:44ch}
+  .panel-l p + p{margin-top:14px}
+  .panel-l .chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:26px}
+  .chip{font-size:.74rem;font-weight:700;border:1.5px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--slate-soft)}
+  .panel-r{background:linear-gradient(160deg,var(--green) -10%,oklch(0.66 0.12 138));color:#fff;padding:54px 46px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+  .panel-r .wm{position:absolute;right:-8%;bottom:-12%;font-weight:900;font-size:18rem;line-height:.6;color:#fff;opacity:.12}
+  .panel-r .lead{font-size:4.4rem;font-weight:900;line-height:.9;letter-spacing:-.03em;position:relative}
+  .panel-r .lead small{display:block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-top:12px;font-weight:700}
+  .panel-r dl{margin-top:28px;border-top:1px solid color-mix(in oklch,#fff 35%,transparent);position:relative}
+  .panel-r .row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid color-mix(in oklch,#fff 22%,transparent);font-size:.92rem}
+  .panel-r .row dt{opacity:.85}
+  .panel-r .row dd{font-weight:800}
+
+  /* doctors */
+  .doctors{display:grid;grid-template-columns:1fr 1fr;gap:52px}
+  .doc .av{width:76px;height:76px;border-radius:20px;background:linear-gradient(150deg,var(--green-bright),var(--green-deep));color:#fff;display:grid;place-items:center;font-weight:900;font-size:1.55rem;margin-bottom:24px;box-shadow:0 18px 36px -22px var(--green-deep)}
+  .doc .role{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-deep);font-weight:800;margin-bottom:9px}
+  .doc h3{font-size:1.8rem;font-weight:900;line-height:1}
+  .doc .cred{color:var(--slate-soft);margin:6px 0 18px;font-size:.95rem}
+  .doc blockquote{font-size:1.16rem;font-weight:600;color:var(--slate-ink);margin:0 0 16px;line-height:1.4;letter-spacing:-.01em}
+  .doc blockquote .q{color:var(--green-deep);font-weight:900}
+  .doc p{color:var(--slate-soft);font-size:.97rem}
+
+  /* outreach band */
+  .band{background:var(--slate-ink);color:var(--bg);border-radius:20px;padding:64px 56px;position:relative;overflow:hidden;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+  .band .bs{position:absolute;left:-3%;top:50%;transform:translateY(-50%);font-weight:900;font-size:34rem;line-height:.6;color:var(--green);opacity:.10;pointer-events:none}
+  .band h3{color:var(--bg);font-size:clamp(1.8rem,4vw,2.7rem);position:relative}
+  .band h3 .g{color:var(--green-bright)}
+  .band p{position:relative;color:color-mix(in oklch,var(--bg) 78%,transparent);font-size:1.04rem}
+  .band .stat{position:relative;text-align:right}
+  .band .stat b{font-size:3.4rem;font-weight:900;color:var(--green-bright);display:block;line-height:1}
+  .band .stat span{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:color-mix(in oklch,var(--bg) 70%,transparent);font-weight:700}
+
+  /* cta */
+  .cta{text-align:center}
+  .cta h2{font-size:clamp(2.1rem,5vw,3.6rem);max-width:18ch;margin:0 auto}
+  .cta h2 .g{color:var(--green-deep)}
+  .cta p{color:var(--slate-soft);max-width:48ch;margin:18px auto 32px}
+  .cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+  footer{border-top:1px solid var(--line);padding:54px 0 44px;font-size:.88rem;color:var(--slate-soft);margin-top:36px}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:30px;align-items:flex-start}
+  footer a{color:var(--slate-soft);text-decoration:none;display:block;margin:8px 0}
+  footer a:hover{color:var(--slate-ink)}
+  .fcol h4{font-size:.95rem;color:var(--slate-ink);margin-bottom:10px;font-weight:800}
+
+  /* clinic finder */
+  .finder-sec{padding:64px 0 20px}
+  .finder{background:linear-gradient(150deg,oklch(0.95 0.035 130),var(--bg-2));border:1px solid var(--line);border-radius:22px;padding:46px 48px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+  .finder-copy h2{font-size:clamp(1.6rem,3.2vw,2.3rem);margin-top:10px}
+  .finder-copy p{color:var(--slate-soft);margin-top:10px;max-width:44ch}
+  .finder-form{display:flex;gap:10px;flex-wrap:wrap}
+  .finder-form input{font-family:inherit;font-weight:600;font-size:1rem;padding:15px 20px;border:1.5px solid var(--line);border-radius:999px;background:var(--paper);color:var(--slate-ink);min-width:230px;outline:none;transition:border-color .2s,box-shadow .2s}
+  .finder-form input::placeholder{color:var(--slate-soft);font-weight:500}
+  .finder-form input:focus{border-color:var(--green);box-shadow:0 0 0 4px color-mix(in oklch,var(--green) 18%,transparent)}
+  .cta .micro{margin-top:22px;font-size:.92rem;color:var(--slate-soft)}
+  .cta .micro a{color:var(--green-deep);font-weight:700;text-decoration:none}
+  .cta .micro a:hover{text-decoration:underline}
+
+  @media(max-width:880px){
+    .panel,.doctors,.vals,.triad,.band,.finder{grid-template-columns:1fr}
+    .panel-r{border-top:1px solid var(--line)}
+    .t:not(:last-child){border-right:0;border-bottom:1px solid var(--line)}
+    .hero-rule{grid-template-columns:repeat(2,auto);gap:28px 40px}
+    .band .stat{text-align:left}
+    .nav-links{display:none}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="brand" href="#"><img class="logo logo-nav" src="assets/logo-horiz-slate.png" alt="The Specific Chiropractic Centers"></a>
+    <div class="nav-links">
+      <a href="#pillars">The Care</a>
+      <a href="#technique">The Technique</a>
+      <a href="#doctors">The Doctors</a>
+      <a href="#find">Find a Clinic</a>
+      <a href="#book" class="btn btn-green">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="hero-S" aria-hidden="true">S</div>
+  <div class="wrap">
+    <div class="hero-in">
+      <span class="label">Upper Cervical Specific Chiropractic</span>
+      <h1 class="promise" style="margin-top:18px">One vertebra.<br><b>A whole <span class="g">life</span> back.</b></h1>
+    </div>
+    <p class="hero-lede">We put the health and care back in healthcare, correcting one vertebra at the top of the spine with a precision most never knew was possible, and giving thousands of people their ordinary days back.</p>
+    <div class="hero-actions">
+      <a href="#book" class="btn btn-green">Book your first visit</a>
+      <a href="#find" class="btn btn-outline">Find a clinic near you</a>
+    </div>
+    <div class="hero-rule">
+      <div class="hr-item"><b>2006</b><span>Established</span></div>
+      <div class="hr-item"><b>16</b><span>Centers</span></div>
+      <div class="hr-item"><b>200+</b><span>Training hrs</span></div>
+      <div class="hr-item"><b>C1</b><span>One focus</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="finder-sec" id="find">
+  <div class="wrap">
+    <div class="finder">
+      <div class="finder-copy">
+        <span class="label">Find a Center</span>
+        <h2>16 centers nationwide. Find yours.</h2>
+        <p>From Hawaii to Massachusetts. Enter your city or ZIP and we'll point you to the nearest clinic and its booking page.</p>
+      </div>
+      <form class="finder-form" onsubmit="return false">
+        <input type="text" inputmode="text" placeholder="City or ZIP code" aria-label="City or ZIP code">
+        <button class="btn btn-green" type="submit">Find a clinic</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="pillars">
+  <div class="wrap">
+    <div class="center">
+      <span class="label">Reasons for hope</span>
+      <h2>Get Hope. Get Well. Live Life.</h2>
+      <p>Not a list of services. A sequence we have watched repeat in thousands of people.</p>
+    </div>
+    <div class="triad">
+      <div class="t"><img class="mk" src="assets/mark-green.png" alt=""><div class="pill">Get <span class="g">Hope</span></div><p>You were told to manage it forever. We begin with imaging and pattern analysis, so the answer to "what is wrong with me" is finally specific, and finally yours.</p></div>
+      <div class="t"><img class="mk" src="assets/mark-green.png" alt=""><div class="pill">Get <span class="g">Well</span></div><p>The atlas, the top vertebra, is moved back into balance with a light, exact correction. No force, no twisting, no sound. Your body does the rest.</p></div>
+      <div class="t"><img class="mk" src="assets/mark-green.png" alt=""><div class="pill">Live <span class="g">Life</span></div><p>The headaches quiet. The fog lifts. And the life you had quietly set aside becomes, simply, normal again.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="padding-top:0">
+  <div class="wrap">
+    <div class="vals">
+      <div class="val"><h4>Our Brand</h4><p>Healthcare that makes sense, through <b>long lasting solutions</b> and life changing experiences.</p></div>
+      <div class="val"><h4>Our Cause</h4><p>Empowering our communities to make <b>smart choices</b> relative to their health and wellness.</p></div>
+      <div class="val"><h4>Our People</h4><p>A dedicated team of compassionate people who <b>love what they do</b>, in 16 centers nationwide.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="technique">
+  <div class="wrap">
+    <div class="panel">
+      <div class="panel-l">
+        <span class="label">The Art of the Specific</span>
+        <h2>A technique refined over <span class="g">twenty years.</span></h2>
+        <p>Founded by Dr. Shawn Dill and the late Dr. Andy Roberts, our knee-chest, solid-headpiece method corrects the upper cervical spine using biomechanical x-ray and pattern analysis.</p>
+        <p>It is taught carefully, doctor to doctor, because care this precise cannot be rushed. That is the meaning of our name.</p>
+        <div class="chips"><span class="chip">Knee Chest</span><span class="chip">Solid Headpiece</span><span class="chip">Biomechanical X-Ray</span><span class="chip">Pattern Analysis</span></div>
+      </div>
+      <div class="panel-r">
+        <div class="wm" aria-hidden="true">S</div>
+        <div class="lead">C1<small>The Atlas</small></div>
+        <dl>
+          <div class="row"><dt>Analysis</dt><dd>Biomechanical</dd></div>
+          <div class="row"><dt>Method</dt><dd>Knee chest</dd></div>
+          <div class="row"><dt>Force</dt><dd>Light, specific</dd></div>
+          <div class="row"><dt>Confirmed by</dt><dd>Re-imaging</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="doctors">
+  <div class="wrap">
+    <div class="center">
+      <span class="label">The leadership</span>
+      <h2>In the care of two devoted doctors.</h2>
+    </div>
+    <div class="doctors">
+      <div class="doc">
+        <div class="av">SD</div>
+        <div class="role">Founder &amp; Chief Executive</div>
+        <h3>Dr. Shawn Dill</h3>
+        <p class="cred">Doctor of Chiropractic, Logan College, 1995</p>
+        <blockquote><span class="q">&ldquo;</span>Precision is a form of respect for the person on the table.<span class="q">&rdquo;</span></blockquote>
+        <p>He built one of the world's largest upper cervical practices in Costa Rica and authored the law that regulates chiropractic there. Today he leads The Specific and mentors doctors through the Black Diamond Club.</p>
+      </div>
+      <div class="doc">
+        <div class="av">GD</div>
+        <div class="role">Chief Operating Officer &amp; Instructor</div>
+        <h3>Dr. Grant Dennis</h3>
+        <p class="cred">Doctor of Chiropractic, Cum Laude, Parker University</p>
+        <blockquote><span class="q">&ldquo;</span>My work is to keep this technique exactly as careful as it was meant to be.<span class="q">&rdquo;</span></blockquote>
+        <p>A first-generation chiropractor who built two Arkansas clinics known for the most difficult cases. He now teaches The Art of the Specific to doctors around the world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="band">
+      <div class="bs" aria-hidden="true">S</div>
+      <div>
+        <span class="label" style="color:var(--green-bright)">International Outreach</span>
+        <h3 style="margin-top:12px">Bringing <span class="g">hope</span> to the world.</h3>
+        <p style="margin-top:14px">Every year our doctors travel to communities in need, from El Salvador to the Philippines, to deliver chiropractic care out of their own abundance.</p>
+      </div>
+      <div class="stat"><b>2</b><span>Outreach trips a year</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="book">
+  <div class="wrap">
+    <span class="label">Begin</span>
+    <h2 style="margin-top:16px">Ready to feel like <span class="g">yourself</span> again?</h2>
+    <p>Book your first visit at the center nearest you. New patients are welcome, and most start with a consultation and imaging so we know exactly where to begin.</p>
+    <div class="cta-actions">
+      <a href="#" class="btn btn-green">Book your first visit</a>
+      <a href="#find" class="btn btn-outline">Find a clinic</a>
+    </div>
+    <p class="micro">Are you a doctor? <a href="#">Train in The Art of the Specific &rarr;</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div style="max-width:320px">
+        <img class="logo logo-foot" src="assets/logo-horiz-slate.png" alt="The Specific Chiropractic Centers" style="margin-bottom:16px">
+        <p>Putting the health and care back in healthcare, since 2006.</p>
+      </div>
+      <div class="fcol"><h4>Care</h4><a href="#">Find a Center</a><a href="#">Conditions</a><a href="#">What to Expect</a></div>
+      <div class="fcol"><h4>Doctors</h4><a href="#">The Technique</a><a href="#">Training</a><a href="#">Black Diamond Club</a></div>
+      <div class="fcol"><h4>Company</h4><a href="#">Our Story</a><a href="#">Leadership</a><a href="#">Outreach</a></div>
+    </div>
+    <p style="margin-top:36px;font-size:.78rem">© 2006–2026 The Specific Chiropractic Centers.</p>
+  </div>
+</footer>
+
+</body>
+</html>
