@@ -120,8 +120,17 @@
   footer a:hover{color:var(--ink)}
   .fcol h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:12px}
 
+  /* clinic finder */
+  .finder-sec{padding:66px 0}
+  .finder{background:var(--paper-2);border:1px solid var(--line);border-radius:4px;padding:48px 46px;display:grid;grid-template-columns:1fr auto;gap:38px;align-items:center}
+  .finder h2{font-family:"Fraunces";font-weight:380;font-size:clamp(1.8rem,3.4vw,2.6rem);letter-spacing:-.02em;line-height:1.05;margin-top:10px}
+  .finder p{color:var(--ink-soft);margin-top:10px;max-width:42ch}
+  .finder-form{display:flex;gap:10px;flex-wrap:wrap}
+  .finder-form input{font-family:"Inter";font-size:1rem;padding:14px 18px;border:1px solid var(--line);border-radius:3px;background:var(--paper);color:var(--ink);min-width:228px;outline:none;transition:border-color .2s}
+  .finder-form input:focus{border-color:var(--green-deep)}
+
   @media(max-width:880px){
-    .hero-grid,.feature-grid,.pillars,.docs{grid-template-columns:1fr}
+    .hero-grid,.feature-grid,.pillars,.docs,.finder{grid-template-columns:1fr}
     .pillar{border-right:0;border-top:1px solid var(--line)}
     .doc:first-child{border-right:0;border-bottom:1px solid var(--ink)}
     .nav-links{display:none}
@@ -155,8 +164,8 @@
       <p class="hero-lede"><span class="drop">F</span>or the people who were told to live with it, the headaches, the vertigo, the fog, there is a smaller, more precise correction. One vertebra. Measured, not forced. We have spent two decades making the extraordinary feel ordinary.</p>
       <div>
         <div class="hero-actions">
-          <a href="#find" class="btn btn-green">Find your nearest center</a>
-          <a href="#story" class="btn btn-solid">Read the work</a>
+          <a href="#book" class="btn btn-green">Book your first visit</a>
+          <a href="#find" class="btn btn-solid">Find a clinic near you</a>
         </div>
         <p class="hero-meta" style="margin-top:34px"><b>200+ hours</b> of advanced post-graduate upper cervical training behind every adjustment.</p>
       </div>
@@ -168,6 +177,22 @@
     </div>
   </div>
 </header>
+
+<section class="finder-sec" id="find">
+  <div class="wrap">
+    <div class="finder">
+      <div>
+        <span class="eyebrow">Find a Center</span>
+        <h2>Sixteen centers, from Hawaii to Massachusetts.</h2>
+        <p>Tell us where you are and we'll point you to the nearest clinic, and the page where you can book.</p>
+      </div>
+      <form class="finder-form" onsubmit="return false">
+        <input type="text" placeholder="City or ZIP code" aria-label="City or ZIP code">
+        <button class="btn btn-green" type="submit">Find a clinic</button>
+      </form>
+    </div>
+  </div>
+</section>
 
 <section id="story">
   <div class="wrap">
@@ -245,13 +270,13 @@
   </div>
 </section>
 
-<section class="cta" id="join">
+<section class="cta" id="book">
   <div class="wrap">
     <h2>Some are meant to receive<br>this work. <em>Some are meant<br>to carry it.</em></h2>
     <p>Patients, find the center nearest you. Doctors, learn the technique that turns the impossible case into a Tuesday afternoon.</p>
     <div class="cta-actions">
-      <a href="#find" class="btn btn-paper">Find a Center</a>
-      <a href="#train" class="btn btn-ghost">Train With Us</a>
+      <a href="#" class="btn btn-paper">Book your first visit</a>
+      <a href="#find" class="btn btn-ghost">Find a clinic</a>
     </div>
   </div>
 </section>

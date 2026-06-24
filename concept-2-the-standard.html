@@ -124,8 +124,18 @@
   footer a:hover{color:var(--green)}
   .fcol h4{color:var(--green);text-transform:uppercase;letter-spacing:.12em;font-size:.68rem;margin-bottom:12px}
 
+  /* clinic finder */
+  .finder-sec{padding:56px 0}
+  .finder{border:1px solid var(--line);border-radius:8px;background:linear-gradient(160deg,var(--panel),var(--bg-2));padding:44px 46px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center}
+  .finder h2{font-family:"Space Grotesk";font-weight:500;font-size:clamp(1.6rem,3.2vw,2.4rem);letter-spacing:-.02em;margin-top:12px}
+  .finder p{color:var(--fg-soft);margin-top:12px;max-width:42ch}
+  .finder-form{display:flex;gap:10px;flex-wrap:wrap}
+  .finder-form input{font-family:"IBM Plex Mono",monospace;font-size:.92rem;padding:14px 18px;border-radius:4px;border:1px solid var(--line);background:var(--bg);color:var(--fg);min-width:230px;outline:none;transition:border-color .2s}
+  .finder-form input::placeholder{color:var(--fg-faint)}
+  .finder-form input:focus{border-color:var(--green)}
+
   @media(max-width:900px){
-    .hero-grid,.doc-wrap{grid-template-columns:1fr}
+    .hero-grid,.doc-wrap,.finder{grid-template-columns:1fr}
     .specs,.protocol{grid-template-columns:1fr 1fr}
     .nav-links{display:none}
   }
@@ -161,8 +171,8 @@
         <h1 style="margin-top:18px">The most <span class="g">precise</span> correction<br>in chiropractic.<br><span class="o">Nothing more. Nothing extra.</span></h1>
         <p class="lede">One vertebra holds your head in balance. We analyze it on film, correct it by hand, and confirm it moved. That exactness is the whole point. It is why we are The Specific.</p>
         <div class="hero-actions">
-          <a href="#find" class="btn btn-green">Find your center →</a>
-          <a href="#method" class="btn btn-line">See the method</a>
+          <a href="#book" class="btn btn-green">Book your first visit →</a>
+          <a href="#find" class="btn btn-line">Find a clinic</a>
         </div>
         <div class="hero-stats">
           <div class="hs"><b>200+</b><span>Post-grad hrs</span></div>
@@ -204,6 +214,22 @@
     </div>
   </div>
 </header>
+
+<section class="finder-sec" id="find">
+  <div class="wrap">
+    <div class="finder">
+      <div>
+        <span class="label">Find a Center</span>
+        <h2>16 centers nationwide. Locate yours.</h2>
+        <p>From Hawaii to Massachusetts. Enter your city or ZIP and we'll route you to the nearest clinic and its booking page.</p>
+      </div>
+      <form class="finder-form" onsubmit="return false">
+        <input type="text" placeholder="City or ZIP code" aria-label="City or ZIP code">
+        <button class="btn btn-green" type="submit">Find a clinic →</button>
+      </form>
+    </div>
+  </div>
+</section>
 
 <section id="method">
   <div class="wrap">
@@ -275,14 +301,14 @@
   </div>
 </section>
 
-<section id="train" style="padding-top:40px">
+<section id="book" style="padding-top:40px">
   <div class="wrap">
     <div class="cta">
-      <h2>Find the <span class="g">precision</span> near you.<br>Or learn to deliver it.</h2>
-      <p>Patients: locate a center and get measured, not guessed at. Doctors: train in The Art of the Specific and join a network that holds the line on quality.</p>
+      <h2>Get the <span class="g">precision</span> near you.<br>Book your first visit.</h2>
+      <p>New patients welcome. Most start with a consultation and biomechanical imaging, so we know exactly where to begin. Doctors: <a href="#" style="color:var(--green)">train in The Art of the Specific</a>.</p>
       <div class="cta-actions">
-        <a href="#find" class="btn btn-green">Find a Center →</a>
-        <a href="#" class="btn btn-line">Apply to Train</a>
+        <a href="#" class="btn btn-green">Book your first visit →</a>
+        <a href="#find" class="btn btn-line">Find a clinic</a>
       </div>
     </div>
   </div>
